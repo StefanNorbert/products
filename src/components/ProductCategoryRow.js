@@ -8,9 +8,13 @@ class ProductCategoryRow extends React.Component {
     }
 
     render() {
+        const styles = {
+            fontWeight: 'bold'
+        };
+
         return (
-            <div className="productCategory">
-                <p>{this.props.category}</p>
+            <div style={styles} className="productCategory">
+                <p style={{marginBottom: 0.5+'em'}}>{this.props.category}</p>
             </div>
         );
     }

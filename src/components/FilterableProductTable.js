@@ -10,8 +10,13 @@ class FilterableProductTable extends React.Component {
     }
 
     render() {
+        const styles = {
+            width: '400px',
+            padding: '10px',
+            backgroundColor: '#eff'
+        };
         return (
-            <div className="filterableProductTable">
+            <div style={styles} className="filterableProductTable">
                 <ProductTable/>
             </div>
         );

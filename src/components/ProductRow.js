@@ -8,10 +8,16 @@ class ProductRow extends React.Component {
     }
 
     render() {
+        const styles = {
+            display: 'flex',
+            justifyContent: 'space-between'
+        };
+
+
         return (
-            <div className="productRow">
-                <p>{this.props.name}</p>
-                <p>{this.props.price}</p>
+            <div style={styles} className="productRow">
+                <p style={{marginTop: 0}}>{this.props.name}</p>
+                <p style={{marginTop: 0}}>${this.props.price}</p>
             </div>
         );
     }

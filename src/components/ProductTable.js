@@ -21,9 +21,15 @@ class ProductTable extends React.Component {
 
 
     render() {
+        const headerStyles = {
+            display: 'flex',
+            justifyContent: 'space-between',
+            fontWeight: 'bolder'
+        };
+
         return (
             <div>
-                <div className="headerRow">
+                <div style={headerStyles} className="headerRow">
                     <p>Name</p>
                     <p>Price</p>
                 </div>
