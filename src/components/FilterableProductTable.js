@@ -2,6 +2,7 @@ import React from 'react';
 
 import products from '../data';
 import ProductTable from './ProductTable';
+import SearchBar from './SearchBar';
 
 class FilterableProductTable extends React.Component {
     constructor(props) {
@@ -18,6 +19,7 @@ class FilterableProductTable extends React.Component {
         };
         return (
             <div style={styles} className="filterableProductTable">
+                <SearchBar/>
                 <ProductTable products={products}/>
             </div>
         );
