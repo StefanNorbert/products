@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-import ProductTable from './components/ProductTable';
+import FilterableProductTable from './components/FilterableProductTable';
 
 ReactDOM.render(
     <React.StrictMode>
-        <ProductTable/>
+        <FilterableProductTable/>
     </React.StrictMode>,
     document.getElementById('root')
 );
