@@ -17,7 +17,7 @@ class ProductTable extends React.Component {
         this.props.products.forEach(product => {
             if(product.category === lastCategory){
                 rows.push(
-                    <ProductRow key={product.id} name={product.name} price={product.price} />
+                    <ProductRow key={product.id} name={product.name} price={product.price} inStock={product.inStock}/>
                 );
                 return;
             }
@@ -26,7 +26,7 @@ class ProductTable extends React.Component {
                 <ProductCategoryRow key={product.category} category={product.category} />
             );
             rows.push(
-                <ProductRow key={product.id} name={product.name} price={product.price} />
+                <ProductRow key={product.id} name={product.name} price={product.price} inStock={product.inStock}/>
             );
         });
 

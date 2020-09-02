@@ -20,7 +20,9 @@ class ProductRow extends React.Component {
             display: 'flex',
             justifyContent: 'space-between'
         };
-
+        if(!this.props.inStock) {
+            styles.color = 'red';
+        }
 
         return (
             <div style={styles} className="productRow">
