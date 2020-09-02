@@ -6,6 +6,14 @@ class ProductRow extends React.Component {
         this.state = {
         };
     }
+    
+    componentDidMount() {
+        console.log("ProductRow ComponentDidMount");
+    }
+
+    componentWillUnmount() {
+        console.log("ProductRow componentDidUnmount");
+    }
 
     render() {
         const styles = {

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import products from '../data';
 import ProductTable from './ProductTable';
 
 class FilterableProductTable extends React.Component {
@@ -17,7 +18,7 @@ class FilterableProductTable extends React.Component {
         };
         return (
             <div style={styles} className="filterableProductTable">
-                <ProductTable/>
+                <ProductTable products={products}/>
             </div>
         );
     }
